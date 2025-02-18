@@ -1,7 +1,7 @@
-import "@fontsource/poppins"; // Import Poppins font
+import "@fontsource/poppins"; 
 
 const typography = {
-  fontFamily: "'Poppins', Arial, sans-serif", // ✅ Using Poppins
+  fontFamily: "'Poppins', Arial, sans-serif",
   h1: {
     fontSize: "2rem",
     fontWeight: 700,
