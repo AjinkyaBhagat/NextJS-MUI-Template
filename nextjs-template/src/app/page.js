@@ -6,6 +6,7 @@ import HeroCardImage from "@/components/cards/HeroCardImage";
 import OurStatsCard from "@/components/cards/OurStatsCard";
 import ProductCard from "@/components/cards/ProductCard";
 import productsConfig from "@/config/productsConfig";
+import ContactCard from "@/components/cards/SocialMediaInfo";
 
 const Home = () => {
   const [products, setProducts] = useState([]); // Initialize empty state
@@ -39,7 +40,10 @@ const Home = () => {
             <ProductCard key={product.id} {...product} />
           ))}
         </Box>
+
+        {/* SocialCard */}
       </Container>
+      <ContactCard/>
     </Box>
   );
 };

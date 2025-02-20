@@ -26,7 +26,7 @@ const DesktopMenu = () => {
           component={Link}
           href={item.path}
           sx={{
-            color: theme.palette.primary.main,
+            color: theme.palette.text.secondary,
             "&:hover": { backgroundColor: theme.palette.primary.light },
           }}
         >

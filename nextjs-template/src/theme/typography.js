@@ -1,4 +1,5 @@
 import "@fontsource/poppins"; 
+import { BorderColor } from "@mui/icons-material";
 
 const typography = {
   fontFamily: "'Poppins', Arial, sans-serif",
@@ -16,6 +17,7 @@ const typography = {
   button: {
     textTransform: "none",
     fontWeight: 500,
+    BorderColor:"#f58a1f"
   },
 };
 
