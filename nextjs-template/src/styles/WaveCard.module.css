@@ -1,48 +1,55 @@
-/* src/styles/WaveCard.module.css */
-
-.waveCardContainer {
-  margin: 0;
-  font-family: "Poppins", sans-serif; /* Use local Poppins font */
-}
-
-.waveCardContainer h1 {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  letter-spacing: 2px;
-  font-size: 48px;
-}
-
 .header {
   position: relative;
   text-align: center;
-  background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+  /* background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%); */
+  background: linear-gradient(60deg, rgba(35, 89, 164, 1) 0%, rgba(83, 110, 179, 1) 100%);
   color: white;
+  padding: 50px 0;
+  overflow: hidden; /* Ensure nothing overflows */
+  border-radius: 40px;
 }
 
 .innerHeader {
-  height: 65vh;
   width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.flex {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  flex-direction: column;
+  padding-bottom: 100px; /* Add padding to avoid wave overlap */
+}
+
+/* Grid for Product Cards */
+.productGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+/* New container for waves */
+.wavesContainer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 15vh;
+  overflow: hidden;
+  background: transparent;
+  border-radius: 40px;
 }
 
 .waves {
-  position: relative;
+  position: absolute;
   width: 100%;
-  height: 15vh;
-  margin-bottom: -7px;
+  height: 100%;
+  bottom: 0;
+  left: 0;
   min-height: 100px;
   max-height: 150px;
+  border-radius: 40px;
 }
 
-/* Animation */
+/* Keep wave animation moving */
 .parallax > use {
   animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
@@ -78,11 +85,13 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .productGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+  
   .waves {
     height: 40px;
     min-height: 40px;
-  }
-  .waveCardContainer h1 {
-    font-size: 24px;
   }
 }

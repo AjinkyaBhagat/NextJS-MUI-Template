@@ -27,11 +27,11 @@ const Home = () => {
         <OurStatsCard />
       </Container>
 
-      <WaveCard/>
+      <WaveCard products={products} />
 
       {/* Products Section - Displays a grid of products */}
       <Container sx={{ py: 8 }}>
-        <Box
+        {/* <Box
           sx={{
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
@@ -42,7 +42,7 @@ const Home = () => {
           {products.map((product) => (
             <ProductCard key={product.id} {...product} />
           ))}
-        </Box>
+        </Box> */}
 
         {/* SocialCard */}
       </Container>
