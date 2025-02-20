@@ -7,6 +7,7 @@ import OurStatsCard from "@/components/cards/OurStatsCard";
 import ProductCard from "@/components/cards/ProductCard";
 import productsConfig from "@/config/productsConfig";
 import ContactCard from "@/components/cards/SocialMediaInfo";
+import WaveCard from "@/components/cards/WaveCard";
 
 const Home = () => {
   const [products, setProducts] = useState([]); // Initialize empty state
@@ -25,6 +26,8 @@ const Home = () => {
       <Container sx={{ py: 8 }}>
         <OurStatsCard />
       </Container>
+
+      <WaveCard/>
 
       {/* Products Section - Displays a grid of products */}
       <Container sx={{ py: 8 }}>
