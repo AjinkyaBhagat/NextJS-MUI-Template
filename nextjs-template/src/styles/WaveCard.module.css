@@ -1,0 +1,97 @@
+.header {
+  position: relative;
+  text-align: center;
+  /* background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%); */
+  background: linear-gradient(60deg, rgba(35, 89, 164, 1) 0%, rgba(83, 110, 179, 1) 100%);
+  color: white;
+  padding: 50px 0;
+  overflow: hidden; /* Ensure nothing overflows */
+  border-radius: 40px;
+}
+
+.innerHeader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 100px; /* Add padding to avoid wave overlap */
+}
+
+/* Grid for Product Cards */
+.productGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+/* New container for waves */
+.wavesContainer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 15vh;
+  overflow: hidden;
+  background: transparent;
+  border-radius: 40px;
+}
+
+.waves {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  min-height: 100px;
+  max-height: 150px;
+  border-radius: 40px;
+}
+
+/* Keep wave animation moving */
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .productGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+}
