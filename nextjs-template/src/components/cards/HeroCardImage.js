@@ -53,6 +53,8 @@ const HeroCardImage = () => {
         </motion.div>
       </Container>
     </Box>
+
+    
   );
 };
 

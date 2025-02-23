@@ -6,7 +6,7 @@
   color: white;
   padding: 50px 0;
   overflow: hidden; /* Ensure nothing overflows */
-  border-radius: 40px;
+  /* border-radius: 20px; */
 }
 
 .innerHeader {
@@ -35,7 +35,7 @@
   height: 15vh;
   overflow: hidden;
   background: transparent;
-  border-radius: 40px;
+  /* border-radius: 40px; */
 }
 
 .waves {
@@ -46,7 +46,7 @@
   left: 0;
   min-height: 100px;
   max-height: 150px;
-  border-radius: 40px;
+  /* border-radius: 40px; */
 }
 
 /* Keep wave animation moving */
