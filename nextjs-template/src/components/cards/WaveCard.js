@@ -40,10 +40,10 @@ export default function WaveCard({ products = [] }) {
             />
           </defs>
           <g className={styles.parallax}>
-            <use xlinkHref="#gentle-wave" x="48" y="0" fill="rgba(252, 204,156,0.7)" />
-            <use xlinkHref="#gentle-wave" x="48" y="3" fill="rgba(251, 181, 115,0.5)" />
-            <use xlinkHref="#gentle-wave" x="48" y="5" fill="rgba(249, 170, 94,0.3)" />
-            <use xlinkHref="#gentle-wave" x="48" y="7" fill="#f89f49" />
+            <use xlinkHref="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlinkHref="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlinkHref="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlinkHref="#gentle-wave" x="48" y="7" fill="#fff" />
           </g>
         </svg>
       </div>

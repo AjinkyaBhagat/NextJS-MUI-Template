@@ -3,14 +3,14 @@ const productsConfig = [
       id: 1,
       title: "Onions Powder",
       description: "Freshly sourced, high-quality onions ready for export.",
-      image: "/onion-product.jpg",
+      image: "/onion-powder-red.jpg",
       link: "/products/onion",
     },
     {
       id: 2,
       title: "Organic Spices",
       description: "Aromatic and natural spices for global markets.",
-      image: "/spices-product.jpg",
+      image: "/onion-powder-white.jpg",
       link: "/products/spices",
     },
     {
